@@ -1,0 +1,21 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  flex: 1;
+  padding: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+#root{
+    min-height: 100vh;
+    display: flex;
+}
+.app-container{
+  display: flex;
+}
