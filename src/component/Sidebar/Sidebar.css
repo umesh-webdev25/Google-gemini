@@ -3,9 +3,11 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f0f4f9;
+    background-color: var(--bg-secondary);
     padding: 25px 15px;
     width: auto;
+    border-right: 1px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 .Sidebar img {
     width: 20px;
@@ -16,46 +18,92 @@
     cursor: pointer;
 }
 .Sidebar .new-chat {
-    margin-top: 50px;
+    margin-top: 30px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 15px;
-    background-color: #e6eaf1;
+    padding: 12px 15px;
+    background-color: var(--bg-primary);
     border-radius: 50px;
     font-size: 14px;
-    color: rgb(96, 91, 91);
+    color: var(--text-primary);
     cursor: pointer;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.Sidebar .new-chat:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
 }
 .Sidebar .recent {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-top: 20px;
 }
+
 .Sidebar .recent-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 20px 0 15px 10px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
 }
+
 .Sidebar .recent-entry {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 50px;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
     cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
 }
+
 .Sidebar .recent-entry:hover {
-    background-color: #e6eaf1;
+    background-color: var(--button-hover);
+    border-color: var(--border-color);
 }
+
+.Sidebar .recent-entry img {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.Sidebar .recent-entry:hover img {
+    opacity: 1;
+}
+
+.Sidebar .recent-entry p {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+}
+
 .Sidebar .bottom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
 }
+
 .Sidebar .bottom-item {
-    padding-right: 10px;
+    padding: 12px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    border-radius: 12px;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+
+.Sidebar .bottom-item:hover {
+    background-color: var(--button-hover);
 }

@@ -1,12 +1,91 @@
-# React + Vite
+# Google Gemini AI Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that integrates with Google's Gemini AI API to provide an interactive chat experience. Built with React and Vite, featuring a responsive UI with light/dark theme support.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🤖 Integration with Google Gemini AI API
+- 🌓 Light/Dark theme support
+- 💬 Interactive chat interface
+- 🔍 Search functionality
+- 📱 Responsive design
+- ⚡ Fast performance with Vite
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v14 or later)
+- NPM or Yarn
+- Google Gemini API key
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your Gemini API key:
+   ```
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
+
+### Running the Application
+
+Development mode:
+```bash
+npm run dev
+```
+
+Build for production:
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── assets/         # Static assets
+├── components/     # React components
+│   ├── Main/       # Main chat interface
+│   └── Sidebar/    # Sidebar navigation
+├── config/         # Configuration files
+├── Context/        # React Context providers
+└── App.jsx        # Root component
+```
+
+## Technologies Used
+
+- React
+- Vite
+- Google Gemini AI API
+- CSS Variables for theming
+- Context API for state management
+
+## Features in Detail
+
+### Theme System
+- Seamless light/dark mode switching
+- CSS variables for consistent theming
+- Persistent theme preference storage
+
+### Chat Interface
+- Real-time AI responses
+- Message history
+- Search functionality
+- Responsive design for all screen sizes
+
+### API Integration
+- Secure API key management
+- Error handling
+- Response streaming
+
+## Contributing
+
+Feel free to open issues and submit pull requests to improve the application.
+
+## License
+
+This project is licensed under the MIT License.

@@ -1,1 +1,49 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--bg-primary);
+}
+
+/* Smooth transitions for theme changes */
+*,
+*::before,
+*::after {
+  transition: all 0.3s ease;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--text-secondary);
+  color: var(--bg-primary);
+}
+
+/* Default focus styles */
+:focus {
+  outline: 2px solid var(--text-secondary);
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
