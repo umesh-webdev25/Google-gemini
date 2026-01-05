@@ -1,5 +1,5 @@
 .Sidebar {
-    min-height: 100vh;
+    min-height: 40vh;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;

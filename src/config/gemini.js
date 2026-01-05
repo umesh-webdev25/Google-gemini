@@ -5,7 +5,7 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-2.5-flash"; // The correct model name for text generation
-const API_KEY = "AIzaSyAjVczdHDro1f4Vf41ZHvzRrwNkzlTYJZg";
+const API_KEY = "AIzaSyAdBOIZSCvY6Zf7zPVZrYhsrE73WQUYxB4";
 
 async function runChat(prompt) {
   try {

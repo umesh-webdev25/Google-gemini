@@ -53,7 +53,7 @@ const MainComponent = () => {
                 <p>Generate creative team activities and ice-breakers for better workplace collaboration</p>
                 <img src={assets.message_icon} alt='' />
               </div>
-              <div className='card rule-blink'>
+              {/* <div className='card rule-blink'>
                 <span className='card-tag'>Coding</span>
                 <p className='card-title'>Code Optimizer</p>
                 <p>Enhance code quality with best practices and modern syntax improvements</p>
@@ -64,13 +64,13 @@ const MainComponent = () => {
                 <p className='card-title'>Content Creator</p>
                 <p>Generate creative content ideas and improve writing with professional polish</p>
                 <img src={assets.message_icon} alt='' />
-              </div>
-              <div className='card rule-blink'>
+              </div> */}
+              {/* <div className='card rule-blink'>
                 <span className='card-tag'>Analysis</span>
                 <p className='card-title'>Data Insights</p>
                 <p>Analyze data patterns and generate meaningful insights from your information</p>
                 <img src={assets.bulb_icon} alt='' />
-              </div>
+              </div> */}
             </div>
           </>
         ) : (
